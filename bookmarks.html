@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quiz App</title>
+    <title>Bookmarks page</title>
     <link rel="stylesheet" href="styles.css" />
     <link
       rel="stylesheet"
@@ -20,18 +20,6 @@
     <main>
       <h1>Quiz App</h1>
       <article>
-        <h2 class="Questioncard">What does the word "Yoga" mean?</h2>
-        <button aria-label="show answer">show answer</button>
-        <p style="display: none">
-          Yoga comes from the Sanskrit word "Yuj", which means "to unite" or "to
-          join".
-        </p>
-        <i class="ph ph-bookmark-simple"></i>
-        <ul class="Categories">
-          <li>Philosophy</li>
-        </ul>
-      </article>
-      <article>
         <h2 class="=Questioncard">What is Pranayama in Yoga?</h2>
         <button aria-label="hide answer">hide answer</button>
         <p>
@@ -43,20 +31,30 @@
           <li>Breathwork</li>
         </ul>
       </article>
+      <article>
+        <h2 class="=Questioncard">
+          What is the Sanskrit name for Downward Dog?
+        </h2>
+        <button aria-label="hide answer">hide answer</button>
+        <p>Adho Mukha Svanasana</p>
+        <i class="ph-fill ph-bookmark-simple active"></i>
+        <ul class="Categories">
+          <li>Asana</li>
+        </ul>
+      </article>
     </main>
     <footer>
       <nav>
         <ul>
           <li>
             <button aria-label="Home" href="index.html">
-              <i class="ph-fill ph-house active"></i>
-              <!-- active- -> Home ist aktiv -->
+              <i class="ph ph-house"></i>
             </button>
           </li>
           <li>
             <button aria-label="Bookmark" href="bookmarks.html">
-              <i class="ph ph-bookmark-simple"></i>
-              <!-- nicht aktiv -->
+              <!-- Gefülltes Bookmark-Icon oder zusätzlich CSS-Klasse "active" -->
+              <i class="ph-fill ph-bookmark-simple active"></i>
             </button>
           </li>
           <li>
