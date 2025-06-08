@@ -1,0 +1,54 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+  body {
+    min-height: 100;
+  margin: 0;
+  font-family: system-ui;
+  background-color: lightgrey;
+}
+
+header {
+
+
+}
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  width: 80%;
+  margin: 20px auto;
+ 
+}
+
+ul {
+    list-style: none;
+}
+
+.questioncard {
+  text-align: center;
+  border: 2px solid #888;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 0; /* eckig */
+  background-color: #f9f9f9;
+  font-weight: bold;
+}
+.answer-text {
+    text-align: left;
+}
+
+.questioncard .ph-bookmark-simple {
+    font-size: 4rem;
+}
+nav .ph, nav .ph-fill {
+    font-size: 2rem;
+}
+
+footer {
+    position: sticky;
+    padding:
+}
