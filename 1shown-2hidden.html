@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bookmarks page</title>
+    <title>Quiz App</title>
     <link rel="stylesheet" href="styles.css" />
     <link
       rel="stylesheet"
@@ -28,27 +28,37 @@
     </header>
     <main>
       <article class="questioncard">
+        <h2 class="question">What does the word "Yoga" mean?</h2>
+        <p class="answer-text">
+          Yoga comes from the Sanskrit word "Yuj", which means "to unite" or "to
+          join".
+        </p>
+        <a href="index.html">
+          <button aria-label="hide answer">hide answer</button>
+        </a>
+        <i
+          class="bookmark white-bookmark ph-fill ph-bookmark-simple active"
+        ></i>
+        <!--legt weißes Bookmark hin-->
+        <i class="bookmark ph ph-bookmark-simple"></i>
+        <!--legt inaktives bookmark drüber-->
+        <ul class="categories">
+          <li>Philosophy</li>
+          <li>Sanskrit</li>
+        </ul>
+      </article>
+      <article class="questioncard">
         <h2 class="question">What is Pranayama in Yoga?</h2>
+        <a href="bothshown.html">
+          <button aria-label="show answer">show answer</button>
+        </a>
         <p class="answer-text" style="display: none">
           Pranayama refers to the practice of breath control. It helps regulate
           energy flow and calm the mind.
         </p>
-        <button aria-label="show answer">show answer</button>
         <i class="bookmark ph-fill ph-bookmark-simple active"></i>
         <ul class="categories">
           <li>Breathwork</li>
-          <li>Philosophie</li>
-          <li>8 Limbs</li>
-        </ul>
-      </article>
-      <article class="questioncard">
-        <h2 class="question">What is the Sanskrit name for Downward Dog?</h2>
-        <p class="answer-text" style="display: none">Adho Mukha Svanasana</p>
-        <button aria-label="show answer">show answer</button>
-        <i class="bookmark ph-fill ph-bookmark-simple active"></i>
-        <ul class="categories">
-          <li>Asana</li>
-          <li>Sankskrit</li>
         </ul>
       </article>
     </main>
@@ -57,13 +67,14 @@
         <ul>
           <li>
             <a aria-label="Home" href="index.html">
-              <i class="ph ph-house"></i>
+              <i class="ph-fill ph-house active"></i>
+              <!-- active- -> Home ist aktiv -->
             </a>
           </li>
           <li>
             <a aria-label="Bookmark" href="bookmarks.html">
-              <!-- Gefülltes Bookmark-Icon oder zusätzlich CSS-Klasse "active" -->
-              <i class="ph-fill ph-bookmark-simple active"></i>
+              <i class="ph ph-bookmark-simple"></i>
+              <!-- nicht aktiv -->
             </a>
           </li>
           <li>

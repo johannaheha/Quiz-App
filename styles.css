@@ -1,0 +1,148 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column; /*ordnen die Elemente (header,main,footer) untereinander an*/
+  height: 100%;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  background-color: lightgrey;
+}
+
+header {
+  position: sticky; /*macht Header fix*/
+  top: 0;
+  left: 0;
+  flex-shrink: 0; /*sorgt dafür dass der Header nicht kleiner als 60px schrumpft*/
+  width: 100%;
+  height: 60px;
+  background: darkgray;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header h1 {
+  font-size: 3rem;
+  text-align: center;
+  width: 80%;
+  margin: 20px auto;
+}
+
+main {
+  flex: 1; /*nimmt den restlichen Platz ein ->Footer wird ganz nach unten gedrückt*/
+  overflow-y: auto; /*macht scrollbar ausschließlich in main*/
+  padding: 5px; /*macht 5px Seitenrand*/
+  padding-top: 35px;
+}
+
+.questioncard {
+  position: relative; /*macht es zum Bezugspunkt für das Bookmark*/
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  min-height: 300px;
+  border: 2px solid #888;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  background-color: #f9f9f9;
+  max-width: 425px;
+  margin-left: auto;
+  margin-right: auto; /* (r&l)fügt gleichmäßige margin hinzu sodass es zentriert*/
+}
+
+.questioncard h2 {
+  text-align: center;
+}
+
+.questioncard .answer-text {
+  text-align: center;
+}
+
+.questioncard button {
+  padding: 15px;
+  margin-left: 120px; /*rückt links ein*/
+  margin-right: 120px;
+}
+
+.questioncard ul.categories {
+  display: flex;
+  list-style: none;
+  gap: 8px;
+  justify-content: flex-start;
+  padding: 0; /*macht categories linksbündig*/
+}
+
+.questioncard ul.categories li {
+  border: 1px solid darkslategrey;
+  padding: 5px;
+  border-radius: 8px; /*runde Ecken*/
+  background-color: lightgray;
+}
+
+.questioncard .bookmark {
+  font-size: 4rem;
+  position: absolute; /*Positioniert Element frei im Container*/
+  right: 0;
+  top: -23px;
+}
+
+.questioncard .white-bookmark {
+  color: white;
+}
+nav .ph,
+nav .ph-fill {
+  font-size: 2rem;
+}
+
+footer {
+  flex-shrink: 0; /*sorgt dafür dass der Footer nicht kleiner als 60px schrumpft*/
+  position: sticky;
+  height: 60px;
+  bottom: 0;
+  left: 0;
+  background-color: grey;
+  padding: 0;
+}
+footer nav {
+  height: 100%;
+}
+
+footer ul {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+footer a {
+  text-decoration: none; /*nimmt Unterstrich unter Icons weg*/
+  color: black;
+}
+
+footer a:hover {
+  color: blue;
+}

@@ -15,31 +15,49 @@
       type="text/css"
       href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <main>
+    <header>
       <h1>Quiz App</h1>
-      <article>
-        <h2 class="Questioncard">What does the word "Yoga" mean?</h2>
-        <button aria-label="show answer">show answer</button>
-        <p style="display: none">
+    </header>
+    <main>
+      <article class="questioncard">
+        <h2 class="question">What does the word "Yoga" mean?</h2>
+        <a href="1shown-2hidden.html">
+          <button aria-label="show answer">show answer</button>
+        </a>
+        <p class="answer-text" style="display: none">
           Yoga comes from the Sanskrit word "Yuj", which means "to unite" or "to
           join".
         </p>
-        <i class="ph ph-bookmark-simple"></i>
-        <ul class="Categories">
+        <i
+          class="bookmark white-bookmark ph-fill ph-bookmark-simple active"
+        ></i>
+        <!--legt weißes Bookmark hin-->
+        <i class="bookmark ph ph-bookmark-simple"></i>
+        <!--legt inaktives bookmark drüber-->
+        <ul class="categories">
           <li>Philosophy</li>
+          <li>Sanskrit</li>
         </ul>
       </article>
-      <article>
-        <h2 class="=Questioncard">What is Pranayama in Yoga?</h2>
-        <button aria-label="hide answer">hide answer</button>
-        <p>
+      <article class="questioncard">
+        <h2 class="question">What is Pranayama in Yoga?</h2>
+        <a href="1hidden-2shown.html">
+          <button aria-label="show answer">show answer</button>
+        </a>
+        <p class="answer-text" style="display: none">
           Pranayama refers to the practice of breath control. It helps regulate
           energy flow and calm the mind.
         </p>
-        <i class="ph-fill ph-bookmark-simple active"></i>
-        <ul class="Categories">
+        <i class="bookmark ph-fill ph-bookmark-simple active"></i>
+        <ul class="categories">
           <li>Breathwork</li>
         </ul>
       </article>
