@@ -4,7 +4,13 @@
   box-sizing: border-box;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  display: flex;
+  flex-direction: column;
   height: 100%;
   margin: 0;
   font-family: "Roboto", sans-serif;
@@ -13,12 +19,14 @@ body {
   font-style: normal;
   font-variation-settings: "wdth" 100;
   background-color: lightgrey;
+  overflow-y: auto;
 }
 
 header {
   position: sticky;
   top: 0;
   left: 0;
+  flex-shrink: 0; /*sorgt dafür dass der Header nicht kleiner als 60px schrumpft*/
   width: 100%;
   height: 60px;
   background: darkgray;
@@ -36,6 +44,7 @@ header h1 {
 }
 
 main {
+  flex: 1; /*nimmt den restlichen Platz ein ->Footer wird ganz nach unten gedrückt*/
 }
 
 ul {
@@ -63,6 +72,7 @@ nav .ph-fill {
 }
 
 footer {
+  flex-shrink: 0; /*sorgt dafür dass der Footer nicht kleiner als 60px schrumpft*/
   position: sticky;
   height: 60px;
   bottom: 0;
@@ -72,7 +82,6 @@ footer {
 }
 footer nav {
   height: 100%;
-  display: flex;
 }
 
 footer ul {
