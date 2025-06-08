@@ -117,3 +117,12 @@ footer li {
   justify-content: center;
   flex: 1;
 }
+
+footer a {
+  text-decoration: none;
+  color: black;
+}
+
+footer a:hover {
+  color: blue;
+}
