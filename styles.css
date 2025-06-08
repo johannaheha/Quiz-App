@@ -48,10 +48,6 @@ main {
   padding: 5px; /*macht 5px Seitenrand*/
 }
 
-ul {
-  list-style: none;
-}
-
 .questioncard {
   text-align: center;
   border: 2px solid #888;
@@ -64,6 +60,17 @@ ul {
 }
 .answer-text {
   text-align: left;
+}
+
+ul.categories {
+  display: flex;
+  list-style: none;
+}
+ul.categories li {
+  border: 1px solid darkslategrey;
+  padding: 5px;
+  border-radius: 8px; /*runde Ecken*/
+  background-color: lightgray;
 }
 
 .questioncard .ph-bookmark-simple {
