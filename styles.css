@@ -73,6 +73,12 @@ main {
   text-align: center;
 }
 
+.questioncard button {
+  padding: 15px;
+  margin-left: 120px; /*rückt links ein*/
+  margin-right: 120px;
+}
+
 .questioncard ul.categories {
   display: flex;
   list-style: none;
