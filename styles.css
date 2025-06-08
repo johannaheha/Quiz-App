@@ -51,7 +51,11 @@ main {
 
 .questioncard {
   position: relative; /*macht es zum Bezugspunkt für das Bookmark*/
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   text-align: center;
+  min-height: 300px;
   border: 2px solid #888;
   padding: 1rem;
   margin-bottom: 2rem;
@@ -60,14 +64,23 @@ main {
   margin-left: auto;
   margin-right: auto; /* (r&l)fügt gleichmäßige margin hinzu sodass es zentriert*/
 }
+
+.questioncard h2 {
+  text-align: center;
+}
+
 .questioncard .answer-text {
-  text-align: left;
+  text-align: center;
 }
 
 .questioncard ul.categories {
   display: flex;
   list-style: none;
+  gap: 8px;
+  justify-content: flex-start;
+  padding: 0; /*macht categories linksbündig*/
 }
+
 .questioncard ul.categories li {
   border: 1px solid darkslategrey;
   padding: 5px;
