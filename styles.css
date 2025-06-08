@@ -119,7 +119,7 @@ footer li {
 }
 
 footer a {
-  text-decoration: none;
+  text-decoration: none; /*nimmt Unterstrich unter Icons weg*/
   color: black;
 }
 
