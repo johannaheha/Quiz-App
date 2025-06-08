@@ -49,6 +49,7 @@ main {
 }
 
 .questioncard {
+  position: relative; /*macht es zum Bezugspunkt für das Bookmark*/
   text-align: center;
   border: 2px solid #888;
   padding: 1rem;
@@ -58,19 +59,25 @@ main {
   margin-left: auto;
   margin-right: auto; /* (r&l)fügt gleichmäßige margin hinzu sodass es zentriert*/
 }
-.answer-text {
+.questioncard .answer-text {
   text-align: left;
 }
 
-ul.categories {
+.questioncard ul.categories {
   display: flex;
   list-style: none;
 }
-ul.categories li {
+.questioncard ul.categories li {
   border: 1px solid darkslategrey;
   padding: 5px;
   border-radius: 8px; /*runde Ecken*/
   background-color: lightgray;
+}
+
+.questioncard .bookmark {
+  position: absolute; /*Positioniert Element frei im Container*/
+  right: 0;
+  top: -23px;
 }
 
 .questioncard .ph-bookmark-simple {
