@@ -21,7 +21,7 @@ main {
   margin-right: auto; /* (r&l)fügt gleichmäßige margin hinzu sodass es zentriert*/
 }
 
-.questioncard h2 {
+.questioncard__question {
   text-align: center;
 }
 
