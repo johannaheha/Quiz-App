@@ -87,6 +87,7 @@ main {
 
 .questioncard ul.categories {
   display: flex;
+  flex-wrap: wrap; /*warped die Categories im QuestioncardContainer*/
   list-style: none;
   gap: 8px;
   justify-content: flex-start;
