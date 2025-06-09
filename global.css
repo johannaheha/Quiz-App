@@ -1,5 +1,5 @@
 @import "header.css";
-@import "main.css";
+@import "questioncard.css";
 @import "footer.css";
 
 *,
@@ -23,4 +23,10 @@ body {
   font-style: normal;
   font-variation-settings: "wdth" 100;
   background-color: lightgrey;
+}
+main {
+  flex: 1; /*nimmt den restlichen Platz ein ->Footer wird ganz nach unten gedrückt*/
+  overflow-y: auto; /*macht scrollbar ausschließlich in main*/
+  padding: 5px; /*macht 5px Seitenrand*/
+  padding-top: 35px;
 }
