@@ -68,7 +68,7 @@ main {
   top: -23px;
 }
 
-.questioncard .white-bookmark {
+.questioncard__bookmark--whitebg {
   color: white;
 }
 nav .ph,
