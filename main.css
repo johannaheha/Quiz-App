@@ -45,7 +45,7 @@ main {
   }
 }
 
-.questioncard ul.categories {
+.questioncard__categories {
   display: flex;
   flex-wrap: wrap; /*warped die Categories im QuestioncardContainer*/
   list-style: none;
@@ -54,7 +54,7 @@ main {
   padding: 0; /*macht categories linksbündig*/
 }
 
-.questioncard ul.categories li {
+.questioncard__categories li {
   border: 1px solid darkslategrey;
   padding: 5px;
   border-radius: 8px; /*runde Ecken*/
@@ -70,8 +70,4 @@ main {
 
 .questioncard__bookmark--whitebg {
   color: white;
-}
-nav .ph,
-nav .ph-fill {
-  font-size: 2rem;
 }

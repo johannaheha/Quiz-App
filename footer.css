@@ -35,3 +35,8 @@ footer a {
 footer a:hover {
   color: blue;
 }
+
+nav .ph,
+nav .ph-fill {
+  font-size: 2rem;
+}
