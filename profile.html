@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Quiz App</h1>
+    </header>
+    <main>
+      <!--Profilkarte-->
+      <article class="profilecard">
+        <section class="profile-header">
+          <img src="alien" alt="User Avatar" class="profile-avatar" />
+          <h2 class="profile-name">Stellaris Galaxis</h2>
+        </section>
+        <!--About me-->
+        <section class="About me">
+          <h3>About me</h3>
+          <p>
+            I am a cosmic wanderer from Milky Way who's totally obsessed with
+            yoga. Ever day I stretch, breath, and meditate to find my balance
+            within the chaos of the galaxy. Yoga keeps me grounded - even when
+            the starts go wild!
+          </p>
+        </section>
+        <!--Counters-->
+        <section class="counters">
+          <div class="counter">
+            <i class="ph ph-question"></i>
+            <span>12</span>
+          </div>
+          <div class="counter">
+            <i class="ph-fill ph-bookmark-simple"></i>
+            <span>4</span>
+          </div>
+        </section>
+        <!-- Settings -->
+        <section class="settings">
+          <h3>Settings</h3>
+          <div class="dark-mode">
+            <span>Dark Mode</span>
+            <label class="switch">
+              <input type="checkbox" />
+              <span class="slider"></span>
+            </label>
+          </div>
+        </section>
+      </article>
+    </main>
+    <footer>
+      <nav>
+        <ul>
+          <li>
+            <a aria-label="Home" href="index.html">
+              <i class="ph ph-house"></i>
+              <!-- nicht aktiv -->
+            </a>
+          </li>
+          <li>
+            <a aria-label="Bookmark" href="bookmarks.html">
+              <i class="ph ph-bookmark-simple"></i>
+              <!-- nicht aktiv -->
+            </a>
+          </li>
+          <li>
+            <a aria-label="Profile" href="profile.html">
+              <i class="ph-fill ph-user active"></i>
+              <!-- aktiv, wegen ph-fill -->
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>
