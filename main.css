@@ -61,7 +61,7 @@ main {
   background-color: lightgray;
 }
 
-.questioncard .bookmark {
+.questioncard__bookmark {
   font-size: 4rem;
   position: absolute; /*Positioniert Element frei im Container*/
   right: 0;
