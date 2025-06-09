@@ -1,4 +1,4 @@
-header {
+.header {
   position: sticky; /*macht Header fix*/
   top: 0;
   left: 0;
@@ -12,7 +12,7 @@ header {
   justify-content: center;
 }
 
-header h1 {
+.header__title {
   font-size: 3rem;
   text-align: center;
   width: 80%;
