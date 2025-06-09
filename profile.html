@@ -27,39 +27,44 @@
       <h1>Quiz App</h1>
     </header>
     <main>
-      <article class="questioncard">
-        <h2 class="question">What does the word "Yoga" mean?</h2>
-        <a href="1shown-2hidden.html">
-          <button aria-label="show answer">show answer</button>
-        </a>
-        <p class="answer-text" style="display: none">
-          Yoga comes from the Sanskrit word "Yuj", which means "to unite" or "to
-          join".
-        </p>
-        <i
-          class="bookmark white-bookmark ph-fill ph-bookmark-simple active"
-        ></i>
-        <!--legt weißes Bookmark hin-->
-        <i class="bookmark ph ph-bookmark-simple"></i>
-        <!--legt inaktives bookmark drüber-->
-        <ul class="categories">
-          <li>Philosophy</li>
-          <li>Sanskrit</li>
-        </ul>
-      </article>
-      <article class="questioncard">
-        <h2 class="question">What is Pranayama in Yoga?</h2>
-        <a href="1hidden-2shown.html">
-          <button aria-label="show answer">show answer</button>
-        </a>
-        <p class="answer-text" style="display: none">
-          Pranayama refers to the practice of breath control. It helps regulate
-          energy flow and calm the mind.
-        </p>
-        <i class="bookmark ph-fill ph-bookmark-simple active"></i>
-        <ul class="categories">
-          <li>Breathwork</li>
-        </ul>
+      <!--Profilkarte-->
+      <article class="profilecard">
+        <section class="profile-header">
+          <img src="alien" alt="User Avatar" class="profile-avatar" />
+          <h2 class="profile-name">Stellaris Galaxis</h2>
+        </section>
+        <!--About me-->
+        <section class="About me">
+          <h3>About me</h3>
+          <p>
+            I am a cosmic wanderer from Milky Way who's totally obsessed with
+            yoga. Ever day I stretch, breath, and meditate to find my balance
+            within the chaos of the galaxy. Yoga keeps me grounded - even when
+            the starts go wild!
+          </p>
+        </section>
+        <!--Counters-->
+        <section class="counters">
+          <div class="counter">
+            <i class="ph ph-question"></i>
+            <span>12</span>
+          </div>
+          <div class="counter">
+            <i class="ph-fill ph-bookmark-simple"></i>
+            <span>4</span>
+          </div>
+        </section>
+        <!-- Settings -->
+        <section class="settings">
+          <h3>Settings</h3>
+          <div class="dark-mode">
+            <span>Dark Mode</span>
+            <label class="switch">
+              <input type="checkbox" />
+              <span class="slider"></span>
+            </label>
+          </div>
+        </section>
       </article>
     </main>
     <footer>
