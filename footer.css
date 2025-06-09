@@ -28,15 +28,11 @@
 }
 
 .footer__icon-link {
+  font-size: 2rem;
   text-decoration: none; /*nimmt Unterstrich unter Icons weg*/
   color: black;
 }
 
 .footer__icon-link:hover {
   color: blue;
-}
-
-nav .ph,
-nav .ph-fill {
-  font-size: 2rem;
 }
