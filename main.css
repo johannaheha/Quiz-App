@@ -29,6 +29,10 @@ main {
   text-align: center;
 }
 
+.questioncard__answer--hidden {
+  display: none;
+}
+
 .questioncard__button {
   padding: 15px;
   margin-left: 120px; /*rückt links ein*/
