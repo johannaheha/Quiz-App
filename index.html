@@ -23,62 +23,74 @@
     />
   </head>
   <body>
-    <header>
-      <h1>Quiz App</h1>
+    <header class="header">
+      <h1 class="header__title">Quiz App</h1>
     </header>
     <main>
       <article class="questioncard">
-        <h2 class="question">What does the word "Yoga" mean?</h2>
+        <h2 class="questioncard__question">What does the word "Yoga" mean?</h2>
         <a href="1shown-2hidden.html">
-          <button aria-label="show answer">show answer</button>
+          <button class="questioncard__button" aria-label="show answer">
+            show answer
+          </button>
         </a>
-        <p class="answer-text" style="display: none">
+        <p class="questioncard__answer questioncard__answer--hidden">
           Yoga comes from the Sanskrit word "Yuj", which means "to unite" or "to
           join".
         </p>
         <i
-          class="bookmark white-bookmark ph-fill ph-bookmark-simple active"
+          class="questioncard__bookmark questioncard__bookmark--whitebg ph-fill ph-bookmark-simple active"
         ></i>
         <!--legt weißes Bookmark hin-->
-        <i class="bookmark ph ph-bookmark-simple"></i>
+        <i class="questioncard__bookmark ph ph-bookmark-simple"></i>
         <!--legt inaktives bookmark drüber-->
-        <ul class="categories">
-          <li>Philosophy</li>
-          <li>Sanskrit</li>
+        <ul class="questioncard__categories">
+          <li class="questioncard__category-item">Philosophy</li>
+          <li class="questioncard__category-item">Sanskrit</li>
         </ul>
       </article>
       <article class="questioncard">
-        <h2 class="question">What is Pranayama in Yoga?</h2>
+        <h2 class="questioncard__question">What is Pranayama in Yoga?</h2>
         <a href="1hidden-2shown.html">
-          <button aria-label="show answer">show answer</button>
+          <button class="questioncard__button" aria-label="show answer">
+            show answer
+          </button>
         </a>
-        <p class="answer-text" style="display: none">
+        <p class="questioncard__answer questioncard__answer--hidden">
           Pranayama refers to the practice of breath control. It helps regulate
           energy flow and calm the mind.
         </p>
-        <i class="bookmark ph-fill ph-bookmark-simple active"></i>
-        <ul class="categories">
-          <li>Breathwork</li>
+        <i class="questioncard__bookmark ph-fill ph-bookmark-simple active"></i>
+        <ul class="questioncard__categories">
+          <li class="questioncard__category-item">Breathwork</li>
         </ul>
       </article>
     </main>
-    <footer>
-      <nav>
-        <ul>
-          <li>
-            <a aria-label="Home" href="index.html">
+    <footer class="footer">
+      <nav class="footer__nav">
+        <ul class="footer__icons">
+          <li class="footer__icon-item">
+            <a class="footer__icon-link" aria-label="Home" href="index.html">
               <i class="ph-fill ph-house active"></i>
               <!-- active- -> Home ist aktiv -->
             </a>
           </li>
-          <li>
-            <a aria-label="Bookmark" href="bookmarks.html">
+          <li class="footer__icon-item">
+            <a
+              class="footer__icon-link"
+              aria-label="Bookmark"
+              href="bookmarks.html"
+            >
               <i class="ph ph-bookmark-simple"></i>
               <!-- nicht aktiv -->
             </a>
           </li>
-          <li>
-            <a aria-label="Profile" href="profile.html">
+          <li class="footer__icon-item">
+            <a
+              class="footer__icon-link"
+              aria-label="Profile"
+              href="profile.html"
+            >
               <i class="ph ph-user"></i>
             </a>
           </li>

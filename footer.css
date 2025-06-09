@@ -1,4 +1,4 @@
-footer {
+.footer {
   flex-shrink: 0; /*sorgt dafür dass der Footer nicht kleiner als 60px schrumpft*/
   position: sticky;
   height: 60px;
@@ -7,11 +7,11 @@ footer {
   background-color: grey;
   padding: 0;
 }
-footer nav {
+.footer__nav {
   height: 100%;
 }
 
-footer ul {
+.footer__icons {
   display: flex;
   width: 100%;
   height: 100%;
@@ -20,18 +20,19 @@ footer ul {
   margin: 0;
 }
 
-footer li {
+.footer__icon-item {
   display: flex;
   align-items: center;
   justify-content: center;
   flex: 1;
 }
 
-footer a {
+.footer__icon-link {
+  font-size: 2rem;
   text-decoration: none; /*nimmt Unterstrich unter Icons weg*/
   color: black;
 }
 
-footer a:hover {
+.footer__icon-link:hover {
   color: blue;
 }

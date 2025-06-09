@@ -23,50 +23,70 @@
     />
   </head>
   <body>
-    <header>
-      <h1>Quiz App</h1>
+    <header class="header">
+      <h1 class="header__title">Quiz App</h1>
     </header>
     <main>
       <article class="questioncard">
-        <h2 class="question">What is Pranayama in Yoga?</h2>
-        <p class="answer-text" style="display: none">
+        <h2 class="questioncard__question">What is Pranayama in Yoga?</h2>
+        <p class="questioncard__answer questioncard__answer--hidden">
           Pranayama refers to the practice of breath control. It helps regulate
           energy flow and calm the mind.
         </p>
-        <button aria-label="show answer">show answer</button>
-        <i class="bookmark ph-fill ph-bookmark-simple active"></i>
-        <ul class="categories">
-          <li>Breathwork</li>
+        <a>
+          <button class="questioncard__button" aria-label="show answer">
+            show answer
+          </button>
+        </a>
+        <i class="questioncard__bookmark ph-fill ph-bookmark-simple active"></i>
+        <ul class="questioncard__categories">
+          <li class="questioncard__category-item">Breathwork</li>
         </ul>
       </article>
       <article class="questioncard">
-        <h2 class="question">What is the Sanskrit name for Downward Dog?</h2>
-        <p class="answer-text" style="display: none">Adho Mukha Svanasana</p>
-        <button aria-label="show answer">show answer</button>
-        <i class="bookmark ph-fill ph-bookmark-simple active"></i>
-        <ul class="categories">
-          <li>Asana</li>
-          <li>Sankskrit</li>
-          <li>8 Limbs</li>
+        <h2 class="questioncard__question">
+          What is the Sanskrit name for Downward Dog?
+        </h2>
+        <p class="questioncard__answer questioncard__answer--hidden">
+          Adho Mukha Svanasana
+        </p>
+        <a>
+          <button class="questioncard__button" aria-label="show answer">
+            show answer
+          </button>
+        </a>
+        <i class="questioncard__bookmark ph-fill ph-bookmark-simple active"></i>
+        <ul class="questioncard__categories">
+          <li class="questioncard__category-item">Asana</li>
+          <li class="questioncard__category-item">Sankskrit</li>
+          <li class="questioncard__category-item">8 Limbs</li>
         </ul>
       </article>
     </main>
-    <footer>
-      <nav>
-        <ul>
-          <li>
-            <a aria-label="Home" href="index.html">
+    <footer class="footer">
+      <nav class="footer__nav">
+        <ul class="footer__icons">
+          <li class="footer__icon-item">
+            <a class="footer__icon-link" aria-label="Home" href="index.html">
               <i class="ph ph-house"></i>
             </a>
           </li>
-          <li>
-            <a aria-label="Bookmark" href="bookmarks.html">
+          <li class="footer__icon-item">
+            <a
+              class="footer__icon-link"
+              aria-label="Bookmark"
+              href="bookmarks.html"
+            >
               <!-- Gefülltes Bookmark-Icon oder zusätzlich CSS-Klasse "active" -->
               <i class="ph-fill ph-bookmark-simple active"></i>
             </a>
           </li>
-          <li>
-            <a aria-label="Profile" href="profile.html">
+          <li class="footer__icon-item">
+            <a
+              class="footer__icon-link"
+              aria-label="Profile"
+              href="profile.html"
+            >
               <i class="ph ph-user"></i>
             </a>
           </li>

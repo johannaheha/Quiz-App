@@ -21,27 +21,23 @@ main {
   margin-right: auto; /* (r&l)fügt gleichmäßige margin hinzu sodass es zentriert*/
 }
 
-.questioncard h2 {
+.questioncard__question {
   text-align: center;
 }
 
-.questioncard .answer-text {
+.questioncard__answer {
   text-align: center;
 }
 
-.questioncard button {
+.questioncard__answer--hidden {
+  display: none;
+}
+
+.questioncard__button {
   padding: 15px;
-  margin-left: 120px; /*rückt links ein*/
-  margin-right: 120px;
-}
-@media (max-width: 400px) {
-  .questioncard button {
-    margin-left: auto;
-    margin-right: auto;
-  }
 }
 
-.questioncard ul.categories {
+.questioncard__categories {
   display: flex;
   flex-wrap: wrap; /*warped die Categories im QuestioncardContainer*/
   list-style: none;
@@ -50,24 +46,20 @@ main {
   padding: 0; /*macht categories linksbündig*/
 }
 
-.questioncard ul.categories li {
+.questioncard__category-item {
   border: 1px solid darkslategrey;
   padding: 5px;
   border-radius: 8px; /*runde Ecken*/
   background-color: lightgray;
 }
 
-.questioncard .bookmark {
+.questioncard__bookmark {
   font-size: 4rem;
   position: absolute; /*Positioniert Element frei im Container*/
   right: 0;
   top: -23px;
 }
 
-.questioncard .white-bookmark {
+.questioncard__bookmark--whitebg {
   color: white;
-}
-nav .ph,
-nav .ph-fill {
-  font-size: 2rem;
 }
