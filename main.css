@@ -35,14 +35,6 @@ main {
 
 .questioncard__button {
   padding: 15px;
-  margin-left: 120px; /*rückt links ein*/
-  margin-right: 120px;
-}
-@media (max-width: 400px) {
-  .questioncard__button {
-    margin-left: auto;
-    margin-right: auto;
-  }
 }
 
 .questioncard__categories {
