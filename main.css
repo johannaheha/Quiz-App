@@ -54,7 +54,7 @@ main {
   padding: 0; /*macht categories linksbündig*/
 }
 
-.questioncard__categories li {
+.questioncard__category-item {
   border: 1px solid darkslategrey;
   padding: 5px;
   border-radius: 8px; /*runde Ecken*/
