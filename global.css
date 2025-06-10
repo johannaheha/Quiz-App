@@ -32,10 +32,10 @@ body {
   height: 100%;
   margin: 0;
   font-family: "Roboto", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 100;
+  font-optical-sizing: auto; /*passt variable Font an Browser an*/
+  font-weight: 100; /*macht Schrift feiner*/
   font-style: normal;
-  font-variation-settings: "wdth" 100;
+  font-variation-settings: "wdth" 100; /*wegen der variablen Font*/
   background-color: var(--color-background);
   color: var(--color text);
 }
