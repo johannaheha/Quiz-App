@@ -5,10 +5,10 @@
   justify-content: space-between;
   text-align: center;
   min-height: 300px;
-  border: 2px solid #888;
   padding: 1rem;
   margin-bottom: 2rem;
-  background-color: #f9f9f9;
+  background-color: var(--color-background);
+  border: 2px solid var(--color-border);
   max-width: 425px;
   margin-left: auto;
   margin-right: auto; /* (r&l)fügt gleichmäßige margin hinzu sodass es zentriert*/
@@ -40,10 +40,10 @@
 }
 
 .questioncard__category-item {
-  border: 1px solid darkslategrey;
+  border: 1px solid var(--color-category-border);
   padding: 5px;
   border-radius: 8px; /*runde Ecken*/
-  background-color: lightgray;
+  background-color: var(--color-category-bg);
 }
 
 .questioncard__bookmark {
@@ -54,5 +54,5 @@
 }
 
 .questioncard__bookmark--whitebg {
-  color: white;
+  color: var(--color-bookmark-active);
 }
