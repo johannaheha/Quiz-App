@@ -4,10 +4,47 @@
   padding: 15px;
 }
 
+.profilecard__title {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 1rem;
+}
+
+.profilecard__avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid black;
+  object-fit: cover;
+}
+
+.profilecard__name {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.profilecard__about {
+  margin-bottom: 1.5rem;
+}
+
+.profilecard__about-title {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
 .profilecard__counters {
   display: flex;
   justify-content: center;
   gap: 45px;
+}
+
+.profilecard__about-text {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin: 0;
 }
 
 .profilecard__counter-item {
