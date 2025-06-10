@@ -3,14 +3,13 @@
 .profilecard {
   padding: 15px;
   max-width: 425px;
-  text-align: start;
   margin-left: auto;
   margin-right: auto; /* (r&l)fügt gleichmäßige margin hinzu sodass es zentriert*/
 }
 
 .profilecard__title {
   display: flex;
-  gap: 55px;
+  gap: 25px;
   margin-bottom: 1rem;
   align-items: center; /* bringt alles auf eine Linie*/
 }
@@ -21,12 +20,14 @@
   border-radius: 50%; /*Macht Bild rund*/
   border: 2px solid black;
   object-fit: cover; /*passt Bild an, dass es ganzen runden Bereich füllt*/
+  flex-shrink: 0; /*Bild bleibt immer rund*/
 }
 
 .profilecard__name {
   font-size: 1.5rem;
   font-weight: 600;
   margin: 0;
+  flex: 1;
 }
 
 .profilecard__about {
