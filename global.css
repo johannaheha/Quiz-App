@@ -2,6 +2,20 @@
 @import "questioncard.css";
 @import "footer.css";
 
+:root {
+  --color-background: #f9f9f9;
+  --color-text: #333333;
+  --color-header-bg: darkgray;
+  --color-header-text: white;
+  --color-footer-bg: grey;
+  --color-footer-text: black;
+  --color-link-hover: blue;
+  --color-border: #888888;
+  --color-category-bg: lightgray;
+  --color-category-border: darkslategrey;
+  --color-bookmark-active: white; /*Bookmark in weiß*/
+}
+
 *,
 *::before,
 *::after {
@@ -22,7 +36,8 @@ body {
   font-weight: 100;
   font-style: normal;
   font-variation-settings: "wdth" 100;
-  background-color: lightgrey;
+  background-color: var(--color-background);
+  color: var(--color text);
 }
 main {
   flex: 1; /*nimmt den restlichen Platz ein ->Footer wird ganz nach unten gedrückt*/

@@ -2,21 +2,25 @@
 
 .profilecard {
   padding: 15px;
+  max-width: 425px;
+  text-align: start;
+  margin-left: auto;
+  margin-right: auto; /* (r&l)fügt gleichmäßige margin hinzu sodass es zentriert*/
 }
 
 .profilecard__title {
   display: flex;
-  align-items: center;
-  gap: 15px;
+  gap: 55px;
   margin-bottom: 1rem;
+  align-items: center; /* bringt alles auf eine Linie*/
 }
 
 .profilecard__avatar {
   width: 80px;
   height: 80px;
-  border-radius: 50%;
+  border-radius: 50%; /*Macht Bild rund*/
   border: 2px solid black;
-  object-fit: cover;
+  object-fit: cover; /*passt Bild an, dass es ganzen runden Bereich füllt*/
 }
 
 .profilecard__name {
