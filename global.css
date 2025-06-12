@@ -45,3 +45,8 @@ main {
   padding: 5px; /*macht 5px Seitenrand*/
   padding-top: 35px;
 }
+
+ul {
+  list-style: none;
+  padding: 0;
+}
