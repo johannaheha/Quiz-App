@@ -24,6 +24,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="form.css" />
 
     <script src="form.js" defer></script>
   </head>
@@ -36,28 +37,38 @@
     <main>
       <!-- fügt Formular für neue Frage ein -->
 
-      <form class="form">
+      <form class="form" data-js="form">
         <!-- Eingabefeld für die Frage, maxlength 150 -->
-        <label for="question">Your question:</label>
+        <label class="form__label" for="question">Your question:</label>
         <textarea
+          class="form__input"
           data-js="question"
           name="question"
           maxlength="150"
           required
         ></textarea>
 
-        <label for="answer">Your answer:</label>
+        <label class="form__label" for="answer">Your answer:</label>
         <textarea
+          class="form__input"
           data-js="answer"
           name="answer"
           maxlength="150"
           required
         ></textarea>
-        <!-- Eingabefeld für Tag-->
-        <label for="tag">Tag:</label>
-        <input type="text" data-js="tag" name="tag" required />
+
+        <!-- Eingabefeld für Tag -->
+        <label class="form__label" for="tag">Tag:</label>
+        <input
+          class="form__input"
+          type="text"
+          data-js="tag"
+          name="tag"
+          required
+        />
+
         <!-- Absende-Button für das Formular -->
-        <button type="submit">Submit</button>
+        <button class="form__submit" type="submit">Submit</button>
       </form>
     </main>
     <!-- Footer mit Navigationslinks zu allen Seiten der App -->
