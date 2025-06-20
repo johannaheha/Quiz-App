@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Question</title>
+    <link rel="stylesheet" href="global.css" />
+    <script src="form.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__title">Quiz App</h1>
+    </header>
+
+    <main>
+      <!-- fügt Formular für neue Frage ein -->
+
+      <form class="form">
+        <!-- Eingabefeld für die Frage, maxlength 150 -->
+        <label for="question">Your question:</label>
+        <textarea
+          id="question"
+          name="question"
+          maxlength="150"
+          required
+        ></textarea>
+
+        <label for="answer">Your answer:</label>
+        <textarea id="answer" name="answer" maxlength="150" required></textarea>
+        <!-- Eingabefeld für Tag-->
+        <label for="tag">Tag:</label>
+        <input type="text" id="tag" name="tag" required />
+        <!-- Absende-Button für das Formular -->
+        <button type="submit">Submit</button>
+      </form>
+    </main>
+    <!-- Footer mit Navigationslinks zu allen Seiten der App -->
+    <footer class="footer">
+      <nav class="footer__nav">
+        <ul class="footer__icons">
+          <li class="footer__icon-item">
+            <a class="footer__icon-link" href="index.html" aria-label="Home">
+              <i class="ph ph-house"></i>
+            </a>
+          </li>
+          <li class="footer__icon-item">
+            <!-- Link zur Bookmarkpage -->
+            <a
+              class="footer__icon-link"
+              href="bookmarks.html"
+              aria-label="Bookmarks"
+            >
+              <i class="ph ph-bookmark-simple"></i>
+            </a>
+          </li>
+          <li class="footer__icon-item">
+            <!-- Link zur aktuellen Seite (Add) mit aktiven Icon -->
+            <a class="footer__icon-link" href="form.html" aria-label="Add">
+              <i class="ph-fill ph-plus-circle active"></i>
+            </a>
+          </li>
+          <li class="footer__icon-item">
+            <!-- Link zum Profil -->
+            <a
+              class="footer__icon-link"
+              href="profile.html"
+              aria-label="Profile"
+            >
+              <i class="ph ph-user"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>
