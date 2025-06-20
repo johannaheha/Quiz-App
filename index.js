@@ -1,7 +1,11 @@
 // Bookmark-Toggle für das erste Bookmark
 
-const bookmarkIcons = document.querySelector(".questioncard__bookmark");
+const bookmarkIcon = document.querySelector(".questioncard__bookmark");
 
-bookmarkIcon.addEventListener("click",()=>{
-    bookmarkIcon.classList.toggle("active");
-})
+if(bookmarkIcon){ //prüft ob BookmarkIcon existiert
+    bookmarkIcon.addEventListener("click", () => {
+        bookmarkIcon.classList.toggle("ph");
+        bookmarkIcon.classList.toggle("ph-fill");
+        bookmarkIcon.classList.toggle("active");
+    })
+}

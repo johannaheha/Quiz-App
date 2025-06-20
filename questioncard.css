@@ -53,5 +53,5 @@
 }
 
 .questioncard__bookmark--whitebg {
-  color: var(--color-bookmark-active);
+  color: red !important;
 }
