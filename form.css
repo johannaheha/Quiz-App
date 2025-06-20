@@ -36,3 +36,9 @@
 .form__input:focus {
   outline: 2px solid var(--color-link-hover);
 }
+[data-js="card-container"] {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
