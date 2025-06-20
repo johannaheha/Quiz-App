@@ -24,18 +24,23 @@ form.addEventListener("submit", (event) => {
     // Karte erzeugen
     
     const newCard = document.createElement("article");
-    newCard.classList.add("questioncard");
-    newCard.innerHTML = `<h2 class="questioncard__question">${question}</h2>
-    <button class="questioncard__button" aria-label="show answer">show answer</button>
-    <p class="questioncard__answer questioncard__answer--hidden">${answer}</p>
-    <i class="questioncard__bookmark ph ph-bookmark-simple"></i>
-    <ul class="questioncard__categories">
+newCard.classList.add("questioncard");
+newCard.innerHTML = `<h2 class="questioncard__question">${question}</h2>
+  <button class="questioncard__button" aria-label="show answer">show answer</button>
+  <p class="questioncard__answer questioncard__answer--hidden">${answer}</p>
+  <i class="questioncard__bookmark ph ph-bookmark-simple"></i>
+  <ul class="questioncard__categories">
     <li class="questioncard__category-item">${tag}</li>
-    </ul>`;
+  </ul>`;
+
+const listItem = document.createElement("li");
+listItem.appendChild(newCard);
+
+
     
     // Karte einfügen
     
-    cardContainer.appendChild(newCard);
+    cardContainer.appendChild(listItem);
 
     // Formular leeren
       form.reset();
