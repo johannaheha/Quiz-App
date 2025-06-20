@@ -36,5 +36,27 @@ form.addEventListener("submit", (event) => {
     // Karte einfügen
     
     cardContainer.appendChild(newCard);
+
+    // Formular leeren
       form.reset();
+
+      //Zähler zurücksetzen
+
+      questionCounter.textContent ="150 caracters left";
+      answerCounter.textContent="150 caracters left";
 });
+
+function handleCharacterCount(textareaElement, counterElement, maxLength) {
+  textareaElement.addEventListener("input", () => {
+    const remaining = maxLength - textareaElement.value.length;
+    counterElement.textContent = `${remaining} characters left`;
+  });
+}
+
+// Selektiere Felder und Zähler
+const questionCounter = document.querySelector('[data-js="question-count"]');
+const answerCounter = document.querySelector('[data-js="answer-count"]');
+
+// Logik auf beide Felder anwenden
+handleCharacterCount(questionInput, questionCounter, 150);
+handleCharacterCount(answerInput, answerCounter, 150);
