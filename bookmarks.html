@@ -21,13 +21,17 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <script src="bookmarks.js" defer></script>
+    <!-- Ergänzung: Optionales Script für JS-Funktionalität auf dieser Seite -->
   </head>
   <body>
     <header class="header">
       <h1 class="header__title">Quiz App</h1>
     </header>
+
     <main>
       <ul>
+        <!-- Erste gespeicherte Frage -->
         <li>
           <article class="questioncard">
             <h2 class="questioncard__question">What is Pranayama in Yoga?</h2>
@@ -35,11 +39,9 @@
               Pranayama refers to the practice of breath control. It helps
               regulate energy flow and calm the mind.
             </p>
-            <a>
-              <button class="questioncard__button" aria-label="show answer">
-                show answer
-              </button>
-            </a>
+            <button class="questioncard__button" aria-label="show answer">
+              show answer
+            </button>
             <i
               class="questioncard__bookmark ph-fill ph-bookmark-simple active"
             ></i>
@@ -48,6 +50,8 @@
             </ul>
           </article>
         </li>
+
+        <!-- Zweite gespeicherte Frage -->
         <li>
           <article class="questioncard">
             <h2 class="questioncard__question">
@@ -56,46 +60,57 @@
             <p class="questioncard__answer questioncard__answer--hidden">
               Adho Mukha Svanasana
             </p>
-            <a>
-              <button class="questioncard__button" aria-label="show answer">
-                show answer
-              </button>
-            </a>
+            <button class="questioncard__button" aria-label="show answer">
+              show answer
+            </button>
             <i
               class="questioncard__bookmark ph-fill ph-bookmark-simple active"
             ></i>
             <ul class="questioncard__categories">
               <li class="questioncard__category-item">Asana</li>
-              <li class="questioncard__category-item">Sankskrit</li>
+              <li class="questioncard__category-item">Sanskrit</li>
               <li class="questioncard__category-item">8 Limbs</li>
             </ul>
           </article>
         </li>
       </ul>
     </main>
+
     <footer class="footer">
       <nav class="footer__nav">
         <ul class="footer__icons">
+          <!-- Home-Seite -->
           <li class="footer__icon-item">
             <a class="footer__icon-link" aria-label="Home" href="index.html">
               <i class="ph ph-house"></i>
             </a>
           </li>
+
+          <!-- Bookmarks-Seite (aktiv) -->
           <li class="footer__icon-item">
             <a
               class="footer__icon-link"
               aria-label="Bookmark"
               href="bookmarks.html"
             >
-              <!-- Gefülltes Bookmark-Icon oder zusätzlich CSS-Klasse "active" -->
+              <!-- Gefülltes Bookmark-Icon + aktive Klasse -->
               <i class="ph-fill ph-bookmark-simple active"></i>
             </a>
           </li>
+
+          <!-- Formular-Seite zum Erstellen neuer Karten -->
+          <li class="footer__icon-item">
+            <a class="footer__icon-link" href="form.html" aria-label="Add">
+              <i class="ph ph-plus-circle"></i>
+            </a>
+          </li>
+
+          <!-- Profil-Seite -->
           <li class="footer__icon-item">
             <a
               class="footer__icon-link"
-              aria-label="Profile"
               href="profile.html"
+              aria-label="Profile"
             >
               <i class="ph ph-user"></i>
             </a>
