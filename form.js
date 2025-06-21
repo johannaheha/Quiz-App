@@ -9,13 +9,14 @@ const cardContainer = document.querySelector('[data-js="card-container"]');
 const questionCounter = document.querySelector('[data-js="question-count"]');
 const answerCounter = document.querySelector('[data-js="answer-count"]');
 
-// Zähler-Logik
+// Zähler-Logik, Funktion mit 3 Parameter
 function handleCharacterCount(textareaElement, counterElement, maxLength) {
   textareaElement.addEventListener("input", () => {
     const remaining = maxLength - textareaElement.value.length;
     counterElement.textContent = `${remaining} characters left`;
   });
 }
+//Funktionsaufruf - function call
 
 handleCharacterCount(questionInput, questionCounter, 150);
 handleCharacterCount(answerInput, answerCounter, 150);
@@ -24,7 +25,7 @@ handleCharacterCount(answerInput, answerCounter, 150);
 form.addEventListener("submit", (event) => {
   event.preventDefault(); // verhindert das Neuladen
 
-  // Werte auslesen
+  // Werte auslesen, speichert den Text in einer neuen Variable
   const question = questionInput.value;
   const answer = answerInput.value;
   const tag = tagInput.value;
