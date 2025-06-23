@@ -25,7 +25,7 @@ handleCharacterCount(answerInput, answerCounter, 150);
 form.addEventListener("submit", (event) => {
   event.preventDefault(); // verhindert das Neuladen
 
-  // Werte auslesen, speichert den Text in einer neuen Variable
+  // Werte auslesen, speichert den Text in einer neuen Variable (Read all entered data from the )
   const question = questionInput.value;
   const answer = answerInput.value;
   const tag = tagInput.value;
