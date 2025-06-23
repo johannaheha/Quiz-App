@@ -34,14 +34,24 @@
             <h2 class="questioncard__question">
               What does the word "Yoga" mean?
             </h2>
-            <button class="questioncard__button" aria-label="show answer">
+            <button
+              class="questioncard__button"
+              data-js="toggle-answer"
+              aria-label="show answer"
+            >
               show answer
             </button>
-            <p class="questioncard__answer questioncard__answer--hidden">
+            <p
+              class="questioncard__answer questioncard__answer--hidden"
+              data-js="card-answer"
+            >
               Yoga comes from the Sanskrit word "Yuj", which means "to unite" or
               "to join".
             </p>
-            <i class="questioncard__bookmark ph ph-bookmark-simple"></i>
+            <i
+              class="questioncard__bookmark ph ph-bookmark-simple"
+              data-js="bookmark-icon"
+            ></i>
             <ul class="questioncard__categories">
               <li class="questioncard__category-item">Philosophy</li>
               <li class="questioncard__category-item">Sanskrit</li>
@@ -51,15 +61,23 @@
         <li>
           <article class="questioncard">
             <h2 class="questioncard__question">What is Pranayama in Yoga?</h2>
-            <button class="questioncard__button" aria-label="show answer">
+            <button
+              class="questioncard__button"
+              data-js="toggle-answer"
+              aria-label="show answer"
+            >
               show answer
             </button>
-            <p class="questioncard__answer questioncard__answer--hidden">
+            <p
+              class="questioncard__answer questioncard__answer--hidden"
+              data-js="card-answer"
+            >
               Pranayama refers to the practice of breath control. It helps
               regulate energy flow and calm the mind.
             </p>
             <i
               class="questioncard__bookmark ph-fill ph-bookmark-simple active"
+              data-js="bookmark-icon"
             ></i>
             <ul class="questioncard__categories">
               <li class="questioncard__category-item">Breathwork</li>
@@ -71,14 +89,11 @@
     <footer class="footer">
       <nav class="footer__nav">
         <ul class="footer__icons">
-          <!-- Home-Seite (aktiv) -->
           <li class="footer__icon-item">
             <a class="footer__icon-link" aria-label="Home" href="index.html">
               <i class="ph-fill ph-house active"></i>
             </a>
           </li>
-
-          <!-- Bookmarks-Seite -->
           <li class="footer__icon-item">
             <a
               class="footer__icon-link"
@@ -88,15 +103,11 @@
               <i class="ph ph-bookmark-simple"></i>
             </a>
           </li>
-
-          <!-- Formular zum Hinzufügen einer neuen Karte -->
           <li class="footer__icon-item">
             <a class="footer__icon-link" href="form.html" aria-label="Add">
               <i class="ph ph-plus-circle"></i>
             </a>
           </li>
-
-          <!-- Profil-Seite -->
           <li class="footer__icon-item">
             <a
               class="footer__icon-link"

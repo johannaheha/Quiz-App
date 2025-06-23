@@ -37,7 +37,7 @@ body {
   font-style: normal;
   font-variation-settings: "wdth" 100; /*wegen der variablen Font*/
   background-color: var(--color-background);
-  color: var(--color text);
+  color: var(--color-text);
 }
 main {
   flex: 1; /*nimmt den restlichen Platz ein ->Footer wird ganz nach unten gedrückt*/
@@ -49,4 +49,8 @@ main {
 ul {
   list-style: none;
   padding: 0;
+}
+
+.questioncard__answer--hidden {
+  display: none;
 }
